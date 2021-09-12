@@ -3,7 +3,7 @@ import { omit } from 'ramda';
 
 import { Wrapper, DataContainer, Span } from './styled';
 
-const Profile = ({ data }) => {
+const Character = ({ data }) => {
   const person = omit(
     [
       'homeworld',
@@ -25,7 +25,7 @@ const Profile = ({ data }) => {
       value,
     };
   });
-  console.log(dataToRender);
+
   return (
     <Wrapper>
       {dataToRender.map((item, index) => (
@@ -37,4 +37,4 @@ const Profile = ({ data }) => {
   );
 };
 
-export default Profile;
+export default Character;

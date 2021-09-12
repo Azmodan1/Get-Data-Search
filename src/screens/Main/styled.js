@@ -15,5 +15,11 @@ export const ContainerContent = styled(Wrapper)`
   flex-direction: column;
   width: 90%;
   height: 90%;
-  background-color: transparent;
+`;
+
+export const Header = styled(ContainerContent)`
+  width: 100%;
+  height: 10%;
+  flex-direction: row;
+  justify-content: space-around;
 `;

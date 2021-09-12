@@ -1,28 +1,18 @@
 import styled from 'styled-components';
 
-export const Input = styled.input`
-  padding: 1%;
+export const StyledSelect = styled.select`
   font-size: 20px;
   margin-top: 10px;
-  width: ${props => props.width || '100%'};
-  height: ${props => props.height || '20px'};
-  border: solid black;
+  height: 35px;
+  width: 40%;
   background-color: lightgrey;
   border-radius: 8px;
+  border: solid black;
   &:focus {
-    padding-left: 1%;
-    color: white;
     outline: none;
     border-color: white;
-    background-color: darkgray;
-    &::placeholder {
-      color: white;
-    }
   }
-  &::placeholder {
-    text-align: center;
-    color: grey;
-  }
+
   @media (max-width: 535px) {
     font-size: 18px;
   }
